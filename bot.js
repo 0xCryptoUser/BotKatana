@@ -46,7 +46,7 @@ bot.on('ready', function(){
 
         let status = Statuses[Math.floor(Math.random() * Statuses.length)];
 
-        bot.user.setActivity( status , { type : "WATCHING"})}, 3000)
+        bot.user.setActivity( status , { type : "STREAMING"})}, 3000)
 
     
 
@@ -60,7 +60,7 @@ bot.on('message', message => {
 
     if(message.content === prefix + "bot"){
 
-    message.reply("ton invitation")
+    message.reply("*https://discord.com/api/oauth2/authorize?client_id=787926001640276010&permissions=8&scope=bot*")
 
     console.log("invitation du bot demmander!!!");
 
@@ -78,7 +78,7 @@ bot.on('message', message => {
 
     if(message.content === prefix + "serveurcréa"){
 
-        message.author.sendMessage("Tien le serveur du créateur <@780433369196003368>")
+        message.author.sendMessage("**Invalid !**")
 
         message.channel.sendMessage("regarde tes message privés")
 
